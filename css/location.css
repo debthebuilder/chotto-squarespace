@@ -1,0 +1,36 @@
+main {
+    width: 80%;
+    margin: 70px auto;
+}
+.map {
+    width: 100%;
+    height: 600px;
+}
+
+.img-box {
+    width: 100px;
+    margin: 0 auto 30px  auto;
+}
+
+h2, time {
+    font-size: 68px;
+    line-height: 88px;
+    font-weight: 400;
+    margin: 50px 0;
+}
+
+@media screen  and (max-width: 600px) {
+    main {
+        width: 100%;
+    }
+    .map {
+        height: 400px;
+    }
+
+    h2, time {
+        font-size: 32px;
+        line-height: 48px;
+        font-weight: 400;
+        margin: 50px 0;
+    }
+}

@@ -1,0 +1,93 @@
+main {
+    width: 50%;
+}
+
+h1 {
+    margin: 50px auto;
+    text-align: center;
+    font-weight: 400;
+    font-size: 68px;
+    line-height: 78px;
+}
+
+div p {
+    text-align: left;
+    font-size: 16px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+label {
+    font-size: 16px;
+    line-height: 40px; 
+    font-weight: 400;
+    text-transform: capitalize;
+
+}
+.form-container {
+    margin: 50px 0;
+}
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    
+}
+.input-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.input-container p {
+    color: #4f4d4d;
+    font-size: 12px;
+}
+.input-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+}
+
+input, textarea, select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+input[type="date"], input[type="submit"] {
+    width: 30%;
+}
+
+input[type="submit"] {
+    background-color: black;
+    color: white;
+    border: 0;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: black;
+    border: 2px solid black;
+}
+
+.required {
+    font-size: 12px;
+}
+
+@media screen  and (max-width: 600px) {
+    main {
+        width: 100%;
+    }
+    h1 {
+        font-size: 48px;
+    }
+}

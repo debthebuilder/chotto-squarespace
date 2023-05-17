@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --primary: "white";
+    --secondary: "black";
+}
+
+body {
+    background-color: var(--primary);
+    color: var(--black);
+    font-family: 'Roboto Slab', serif;
+    padding: 2%;
+}
+
+nav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+
+}
+
+nav div {
+    width: auto;
+}
+
+a {
+    color: var(--secondary);
+}
+img {
+    width: 100%;
+}
+
+main {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer {
+    text-align: center;
+}
+
+.nav-item {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 31px;
+    margin-right: 10px;
+
+}
+
+.nav-icon {
+    margin-left: 10px;
+    font-size: 19px;
+}
+.menu-icon {
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+.menu-icon div {
+    width: 35px;
+    margin: 7px 0;
+    height: 1px;
+    background-color: black;
+}
+.active {
+    border-bottom: 1px solid black ;
+}
+.logo-container {
+    text-align: center;
+}
+.logo {
+    font-size: 32px;
+    line-height: 42px;
+    
+}
+.nav-links,
+.nav-icons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icons {
+   justify-content: right;
+}
+
+.details {
+    margin: 30px 0;
+    font-size: 52px;
+    line-height: 64px;
+}
+
+.footer-tel {
+    display: block;
+    margin: 20px 0;
+}
+
+.footer-item {
+    margin: 0 10px;
+    padding-right: 10px;
+    border-right: 2px solid black ;
+}
+
+.footer-link {
+    border-bottom: 1px solid black;
+}
+.footer-menu {
+    display: flex;
+    justify-content: space-around;
+}
+@media screen  and (max-width: 600px) {
+    body {
+        padding: 5% ;
+    }
+    main {
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between; 
+    
+    }
+    .menu-icon{
+        display: flex;
+    }
+    .nav-links, .nav-icons {
+        display: none;
+    }
+    .details {
+        font-size: 36px;
+        line-height: 48px;
+    }
+    .footer-item {
+        margin: 0 5px;
+        padding:0 10px;
+        border-right: 2px solid black ;
+    }
+}
