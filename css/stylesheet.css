@@ -112,7 +112,8 @@ footer {
     border-bottom: 1px solid black;
 }
 .footer-menu {
-    width:50%;
+    width:40%;
+    margin: auto;
     display: flex;
     justify-content: space-around;
 }
