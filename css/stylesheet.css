@@ -112,6 +112,7 @@ footer {
     border-bottom: 1px solid black;
 }
 .footer-menu {
+    width:50%;
     display: flex;
     justify-content: space-around;
 }
@@ -142,5 +143,8 @@ footer {
         margin: 0 5px;
         padding:0 10px;
         border-right: 2px solid black ;
+    }
+    .footer-menu {
+        width:100%;
     }
 }
